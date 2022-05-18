@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--根标签：mapper
+    namespace:名称空间
+-->
+<!--命名空间应该填mapper接口地址-->
+<mapper namespace="mapper.userinfoMapper">
+    <select id="selectAll" resultType="user.User">
+        select * from userinfo;
+    </select>
+    <insert id="insertOne">
+        insert into userinfo (username,password)
+        values (#{username},#{password});
+    </insert>
+</mapper>
