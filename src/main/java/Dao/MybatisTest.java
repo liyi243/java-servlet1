@@ -43,7 +43,7 @@ public class MybatisTest {
        //  //提交事务
         sqlSession.commit();
        //  //4.释放资源
-       //  sqlSession.close();
+        sqlSession.close();
        // return usermapper;
     }
 }
